@@ -3,6 +3,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style type="text/css">
+.call{
+  display: inline-block;
+  background-color: #87CEEB;
+  color: ##fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.call:hover {
+  background-color: ##6495ED;
+}
+</style>
 </head>
   <body> 
     <header class="text-gray-600 body-font">
@@ -15,6 +30,9 @@
       <a class="mr-5 hover:text-gray-900">Our Product</a>
       <a class="mr-5 hover:text-gray-900">About Us</a>
       <a class="mr-5 hover:text-gray-900">Log In</a>
+      <div class="call">  
+        <button onclick="window.location.href='tel:9579475537'">Call Us</button>
+      </div> 
     </nav>
   </div>
 </header>
@@ -131,9 +149,6 @@
     </div>
   </div>
 </footer>
-<button onclick="window.location.href='tel:9579475537'">Call Us</button>
-<button onclick="if(confirm('Call us?')){window.location.href='tel:9579475537'}">Call Us</button>
-
 </body>             
 </html>
 
